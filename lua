@@ -67,18 +67,18 @@ interactable.__index = interactable
 
 --//Theme
 local theme = getgenv().theme or {
-    BackColor = Color3.fromRGB(40, 0, 40),
+    BackColor = Color3.fromRGB(15, 15, 15),
     TopBar = Color3.fromRGB(255, 0, 255),
 
-    UpperContainer = Color3.fromRGB(24, 0, 24),
-    InnerContainer = Color3.fromRGB(24, 0, 24),
+    UpperContainer = Color3.fromRGB(24, 25, 24),
+    InnerContainer = Color3.fromRGB(31, 31, 31),
 
-    InteractableBackground = Color3.fromRGB(45, 45, 58),
-    InteractableOutline = Color3.fromRGB(100, 100, 100),
+    InteractableBackground = Color3.fromRGB(15, 16, 15),
+    InteractableOutline = Color3.fromRGB(25, 25, 25),
 
-    Accent = Color3.fromRGB(24, 0, 24), --> Used for hover outlines, selected tab
+    Accent = Color3.fromRGB(7, 7, 7), --> Used for hover outlines, selected tab
 
-    NotSelectedTab = Color3.fromRGB(255, 0, 255), --> shows on all OTHER tabs
+    NotSelectedTab = Color3.fromRGB(40, 0, 40), --> shows on all OTHER tabs
 
     TextColor = Color3.fromRGB(255,255,255),
     SubTextColor = Color3.fromRGB(200,200,200),
@@ -92,7 +92,7 @@ local theme = getgenv().theme or {
 do
     function library.init(title, version, id, position, size)
         local position = position or UDim2.new(0.2, 0, 0.2, 0)
-        local size = size or UDim2.new(0, 720, 0, 420)
+        local size = size or UDim2.new(0, 600, 0, 500)
 
         local ScreenGui,MasterContainer = util.new("ScreenGui", { Parent = game:GetService("CoreGui"), Name=id }, {
             util.new("Frame", { --MasterContainer
